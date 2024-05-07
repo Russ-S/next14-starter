@@ -1,5 +1,9 @@
 import Image from "next/image";
 import styles from "./about.module.css";
+export const metadata = {
+  title: "About Page",
+  description: "Next.js starter app description",
+};
 
 const AboutPage = () => {
   // console.log("lets check where it works");
