@@ -33,7 +33,6 @@ export const addPost = async (prevState, formData) => {
 };
 
 export const deletePost = async (formData) => {
-  "use server";
   const { id } = Object.fromEntries(formData);
 
   try {
@@ -70,7 +69,7 @@ export const addUser = async (prevState, formData) => {
   }
 };
 
-export const deleteUser = async (prevState, formData) => {
+export const deleteUser = async (formData) => {
   "use server";
   const { id } = Object.fromEntries(formData);
 
